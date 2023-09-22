@@ -5,7 +5,7 @@ import "./Footer.css"
 function Footer(){
     return(     
            <div className="footer">
-           <h2>Made With <AiOutlineHeart /> by Ritesh</h2>
+           <h2>Made With {<AiOutlineHeart />}  by Ritesh</h2>
            </div>
     );
 }
