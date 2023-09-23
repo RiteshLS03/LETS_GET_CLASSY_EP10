@@ -28,11 +28,11 @@ class ProfileClass extends React.Component {
 
 
   //componentDidUpdate after every next render
-  componentDidUpdate(){
-    console.log("componentDidUpdate");
+  // componentDidUpdate(){
+  //   console.log("componentDidUpdate");
 
 
-  }
+  // }
 
   componentWillUnmount(){
     console.log("componentWillUnmount");
