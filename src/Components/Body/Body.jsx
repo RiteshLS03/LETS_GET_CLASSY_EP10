@@ -13,7 +13,7 @@ function Body () {
     return filterData
   }
   
-  const [allRestaurants , setAllRestaurants] = useState(null);
+  const [allRestaurants , setAllRestaurants] = useState(0);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState(""); //useState is a function that return an array. First Element is state varible and second element is function that how we want to change the state
 
@@ -75,8 +75,8 @@ console.log(json);
 
         {/* CARDS */}
       <div className="cards">
-        {  
- !allRestaurants ?
+       {  
+  !allRestaurants ?
       <ShimmarUI /> :
       filteredRestaurants?.map((restaurant) => 
          {
@@ -87,7 +87,8 @@ console.log(json);
               </div>
             </Link>
            )
-          })}
+          })
+       }
       </div>
     </div> 
 {    console.log(useState()) }    </>
