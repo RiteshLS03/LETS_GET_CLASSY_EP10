@@ -86,10 +86,7 @@ console.log(json);
               <RestaurantCard  restaurant={...restaurant}  />
               </div>
             </Link>
-            // push origin
            )
-          // 
-          // adding commits
           })
        }
       </div>
