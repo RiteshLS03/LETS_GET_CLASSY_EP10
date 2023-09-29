@@ -13,7 +13,6 @@ class ProfileClass extends React.Component {
     console.log("constructor" + this.props.name);
   }
 
-
   // componentDidMount will be called on initial/first render
   async componentDidMount() {
     // API Calls
@@ -26,25 +25,24 @@ class ProfileClass extends React.Component {
     console.log("Child componentDidMount" + this.props.name);
   }
 
+  // componentDidUpdate after every next render
+  componentDidUpdate() {
+    console.log("componentDidUpdate");
+    // Best place to make an API call
+  }
 
-  //componentDidUpdate after every next render
-  // componentDidUpdate(){
-  //   console.log("componentDidUpdate");
-
-
-  // }
-
-  componentWillUnmount(){
+  componentWillUnmount() {
     console.log("componentWillUnmount");
   }
   render() {
     console.log("render" + this.props.name);
+    const { name, location, avatar_url } = this?.state?.userInfo;
     return (
       <div>
         <h1>Hey , I am class-based component</h1>
-        <h2>Name:{this.state.userInfo.name}</h2>
-        <h3>Location:{this.state.userInfo.location}</h3>
-        <img src={this.state.userInfo.avatar_url}></img>
+        <h2>Name:{name}</h2>
+        <h3>Location:{location}</h3>
+        <img src={avatar_url}></img>
       </div>
     );
   }
@@ -53,16 +51,16 @@ class ProfileClass extends React.Component {
 export default ProfileClass;
 
 /**
- * 
- *   First Child Constructor
+ *
+ *   First Child Constructor 
  *   First Child Render
  *
  * API Call
  * setStateff
- * DOM is updated 
- * json is logged in console 
+ * DOM is updated
+ * json is logged in console
  * child componentDidMount
- * 
+ *
  * Parent component
- * 
+ *
  */
