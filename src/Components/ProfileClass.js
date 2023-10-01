@@ -28,7 +28,7 @@ class ProfileClass extends React.Component {
   // componentDidUpdate after every next render
   componentDidUpdate() {
     console.log("componentDidUpdate");
-    // Best place to make an API call
+    // Best place to make an API call and
   }
 
   componentWillUnmount() {
