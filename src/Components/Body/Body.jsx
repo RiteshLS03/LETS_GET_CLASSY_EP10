@@ -16,7 +16,7 @@ function Body () {
   const [allRestaurants , setAllRestaurants] = useState(0);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState(""); //useState is a function that return an array. First Element is state varible and second element is function that how we want to change the state
-
+// push
 
   useEffect(()=>{
     getResturants()
