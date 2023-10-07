@@ -9,6 +9,7 @@ const About = () => {
         <h1>About US</h1>
         <Profile name={"Ritesh"}/>
         <ProfileClass name={"Ritesh2"}/>
+        {/* push */}
         </>
     )
 }
